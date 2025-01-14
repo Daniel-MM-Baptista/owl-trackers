@@ -1,6 +1,7 @@
 import { InputHTMLAttributes, useEffect, useState } from "react";
 import { getBackgroundColor } from "../colorHelpers";
 import { Tracker } from "../trackerHelpersBasic";
+import "./Name.css";
 
 export default function BarInput({
   tracker,
@@ -72,6 +73,7 @@ export default function BarInput({
     <div
       className={`${animationDuration75} grid grid-cols-1 grid-rows-1 place-items-center drop-shadow-sm focus-within:drop-shadow-md`}
     >
+      <h2 className="bar-name">{tracker.name}</h2>
       <div
         className={`${animationDuration75} ${getBackgroundColor(color)} peer col-span-full row-span-full flex h-[44px] w-[100px] flex-row justify-between rounded-xl pb-[2px] outline-0 dark:outline dark:outline-2 dark:-outline-offset-2 dark:outline-white/40 dark:focus-within:outline-offset-0 dark:focus-within:outline-white/60`}
       >
