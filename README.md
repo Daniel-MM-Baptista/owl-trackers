@@ -6,7 +6,8 @@ System-agnostic token trackers for [Owlbear Rodeo](https://www.owlbear.rodeo/).
 
 ## Installing
 
-Install this extension using the install link: https://owl-trackers-foqr.onrender.com
+Install this extension using the install link: https://owl-trackers-foqr.onrender.com/manifest.json
+
 ## How it Works
 
 This extension allows you to track up to eight stats on your tokens for any gaming system you use.
