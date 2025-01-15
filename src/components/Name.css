@@ -3,3 +3,10 @@
     font-size: 0.7em;
     font-weight: bolder;
 }
+
+.tracker{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}

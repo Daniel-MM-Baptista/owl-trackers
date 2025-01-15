@@ -50,8 +50,9 @@ export default function BubbleInput({
 
   return (
     <div
-      className={`${animationDuration75} grid grid-cols-1 grid-rows-1 place-items-center drop-shadow-sm focus-within:drop-shadow-md`}
+      className={`${animationDuration75} tracker drop-shadow-sm focus-within:drop-shadow-md`}
     >
+      <h2 className="bar-name">{tracker.name}</h2>
       <div
         className={`${animationDuration75} ${getBackgroundColor(color)} peer col-span-full row-span-full size-[44px] rounded-full dark:outline dark:outline-2 dark:-outline-offset-2 dark:outline-white/40 dark:focus-within:outline-offset-0 dark:focus-within:outline-white/60`}
       >
@@ -76,9 +77,6 @@ export default function BubbleInput({
           placeholder=""
         ></input>
       </div>
-      <div
-        className={`${animationDuration75} ${getBackgroundColor(color)} -z-10 col-span-full row-span-full size-[44px] rounded-full peer-focus-within:scale-[1.18] dark:invisible`}
-      ></div>
     </div>
   );
 }

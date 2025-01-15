@@ -71,7 +71,7 @@ export default function BarInput({
 
   return (
     <div
-      className={`${animationDuration75} grid grid-cols-1 grid-rows-1 place-items-center drop-shadow-sm focus-within:drop-shadow-md`}
+      className={`${animationDuration75} tracker drop-shadow-sm focus-within:drop-shadow-md`}
     >
       <h2 className="bar-name">{tracker.name}</h2>
       <div
@@ -121,9 +121,6 @@ export default function BarInput({
           placeholder=""
         ></input>
       </div>
-      <div
-        className={`${animationDuration75} ${getBackgroundColor(color)} -z-10 col-span-full row-span-full h-[44px] w-[100px] rounded-xl peer-focus-within:scale-x-[1.08] peer-focus-within:scale-y-[1.18] dark:bg-transparent`}
-      ></div>
     </div>
   );
 }
